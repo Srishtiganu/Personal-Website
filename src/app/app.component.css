@@ -1,0 +1,63 @@
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFDF7;
+}
+.sidenav {
+  background-color: #0A2342;
+}
+.container {
+  position: relative;
+  text-align: center;
+
+}
+.centered {
+  font-family: 'Inconsolata', monospace;
+  font-size: 40px;
+  position:absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.about mat-card, mat-grid-list {
+  margin: 35px;
+}
+
+.expcard {
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  padding:20px;
+  background-color: white;
+  padding-left: 30px;
+}
+/* Row Gap */
+  .about mat-grid-list > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+.mat-elevation-z0 {
+  background-color: transparent;
+  width: 270px;
+  position: center;
+  padding-top: 25px;
+  border-radius: 20px;
+  border: 2px;
+  border-color: red;
+}
+.leftside {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  padding: 20px;
+}
+.contact,.contact a {
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px
+}
+.contact img {
+  border-radius: 10px;
+}

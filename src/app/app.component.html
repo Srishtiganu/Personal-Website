@@ -1,0 +1,151 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- actual sidenav content -->
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav class = "sidenav" color="primary" mode="side" opened>
+    <mat-list>
+      <mat-list-item>
+        <button mat-button color="warn" (click)="scrollToElement(target)">Home</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button color="warn" (click)="scrollToElement(target2)">About Me</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button color="warn" (click)="scrollToElement(target3)">Projects</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button color="warn" (click)="scrollToElement(target4)">Contact Me!</button>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+<!-- main page content -->
+  <mat-sidenav-content>
+
+    <div class="container" #target>
+      <img src="/assets/pine2.jpg" style="width:100%;height:275px;">
+      <!-- <div class="centered">Srishti Ganu</div> -->
+    </div>
+
+    <div class="home">
+      <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <div class="leftside">
+            <h1>I'm Srishti Ganu,</h1>
+            <p>and I like birds, drums, ballet, and winter time. I also have recently got into coding and want to explore computer science more!</p>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="mat-elevation-z0">
+            <img mat-card-image src="/assets/mesrish.png">
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+
+    <div class="about" #target2>
+
+      <mat-grid-list cols="2" fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+        <mat-grid-tile>
+          <mat-card class="expcard" style="margin:35px">
+            <mat-card-header>
+              <mat-card-title>Girls Who Code</mat-card-title>
+              <mat-card-subtitle>Ford, Palo Alto</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="/assets/gwc.jpg">
+            <mat-card-content>
+              <p>
+                I participated in Girls Who Code 2019 Summer Imersion program and had an amazing experience.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-card class="expcard">
+            <mat-card-header>
+              <mat-card-title>Girls Who Code</mat-card-title>
+              <mat-card-subtitle>Robot Apocalypse</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="/assets/robgame.png">
+            <mat-card-content>
+              <p>
+                For our final project, my group created a 2D prototype using pygame. Maybe in the future, I'll try to recreate it into a first person shooter in Unity.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <mat-card class="expcard">
+            <mat-card-header>
+              <mat-card-title>CHS Drumline</mat-card-title>
+              <mat-card-subtitle>San Bernardino, CA</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="/assets/drum.jpg">
+            <mat-card-content>
+              <p>
+                I've been part of Cupertino High School's drumline for 3 seasons. This was our snareline with our snare instructor from our 2019 winter percussion season and our show was entitled "Not Good Enough".
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-card class="expcard">
+            <mat-card-header>
+              <mat-card-title>Ballet</mat-card-title>
+              <mat-card-subtitle>Hobbies</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="/assets/ballet.jpg">
+            <mat-card-content>
+              <p>
+                I've done ballet since I was five at the Santa Clara Recreation Center. I hope to keep improving to gain better roles as I get older.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+
+    <div class="projects" #target3>
+      <p>link to specific projects, include info abt them</p>
+    </div>
+
+    <div class="contact"#target4> <!--contact -->
+      <mat-grid-list cols="2" rowHeight=200px>
+        <mat-grid-tile rowspan="2">
+          <mat-list>
+            <mat-list-item>
+              <a mat-button color="basic" href="https://www.linkedin.com/in/srishti-ganu-324821188/">Linkedin</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <a mat-button color="basic" href="https://github.com/Srishtiganu">Github</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <a mat-button color="basic" href="https://www.instagram.com/srushsrish/">Instagram</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+          </mat-list>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <h3>To follow me or check out my projects, here are my links to the left! Feel free to reach out</h3>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <img src="/assets/cute.jpg" class="mat-elevation-z0">
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+
+    <div class=button>
+      <button mat-button color="basic" (click)="openDialog()">created using Angular</button>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</body>
